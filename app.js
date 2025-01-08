@@ -24,5 +24,18 @@ const message = (age < 7)
       : 'Adult';
 console.log(message);
 
+let number = 0;
+number++;
+++number;
+console.log(number);
+
+function(x) {
+  return x++
+}
+
+const y = Increment (2);
+console.log(y);
+
+
 
 
