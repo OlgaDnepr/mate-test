@@ -37,13 +37,29 @@
 // console.log(y);
 
 
-function getCentury(year) {
-  if (year === 0) {
-  return 1;
+// function getCentury(year) {
+//   if (year === 0) {
+//   return 1;
+//   }
+//   return Math.ceil(year / 100)
+// }
+// const result = getCentury(1876);
+// console.log(result);
+
+
+function countNetworking(quarantineLength, frequency) {
+  return Math.floor((12 - quarantineLength) / frequency);
   }
-  return Math.ceil(year / 100)
-}
-const result = getCentury(1876);
+
+// const result = countNetworking(3, 2);
+const result = countNetworking(3, 5);
 console.log(result);
 
+const number = '1e23, 10';
+console.log(parseInt(number));
 
+const number1 = '1e23, 10';
+console.log(parseFloat(number1));
+
+const number2 = '0x123aa';
+console.log(parseFloat(number2));
