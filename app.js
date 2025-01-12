@@ -63,3 +63,18 @@ console.log(parseFloat(number1));
 
 const number2 = '0x123aa';
 console.log(parseFloat(number2));
+
+const lotsOfDecimal = 1.766584958675746364;
+const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
+console.log(twoDecimalPlaces);
+
+let myNumber = "74";
+myNumber += 35.7;
+console.log(myNumber);
+console.log(typeof myNumber);
+
+let myNumber1 = "74"; // это рядок, а не число
+myNumber1 = Number(myNumber1) + 35.7; //перевели рядок в число с помощью команды Number
+console.log(myNumber1);
+console.log(typeof myNumber1); //проверяем какой тип данных имеет myNumber1
+
