@@ -78,3 +78,14 @@ myNumber1 = Number(myNumber1) + 35.7; //перевели рядок в числ�
 console.log(myNumber1);
 console.log(typeof myNumber1); //проверяем какой тип данных имеет myNumber1
 
+const ss = 5;
+let sum1 = 0;
+
+debugger;
+
+for (let i = 1; i <= ss; i++) {
+  sum1 += i;
+  console.log(i);
+  
+}
+console.log(sum1);
