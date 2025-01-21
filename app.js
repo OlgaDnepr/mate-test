@@ -179,3 +179,31 @@ for (let i = 1; i <= 7; i++) {
   console.log(result22);
   
 }
+let guestList = `Guests:
+ John
+ ete
+ Mary
+`;
+console.log(guestList); // перенос строки
+
+guestList = 'Guests:\n John, ete Mary';
+console.log(guestList); //перенос строки
+
+guestList = 'Guests:\t John, ete Mary';
+console.log(guestList);
+
+let str = '';
+
+for (let i = 1; i <= 1500; i++) {
+  str += String.fromCodePoint(i);
+}
+// alert(str);
+console.log(str);
+console.log('xГ'.codePointAt(1));
+
+const word = 'елка';
+const word1 = 'ёлка';
+console.log(word.localeCompare(word1));
+
+
+
