@@ -206,4 +206,19 @@ const word1 = 'ёлка';
 console.log(word.localeCompare(word1));
 
 
+const title = ' Mate academy ';
+console.log(title, title.length);
 
+console.log(title.toLowerCase());
+console.log(title, title.length);
+
+let title1 = title.toUpperCase();
+console.log(title1);
+
+function summ(a, b, ...rest) {
+  console.log(a, b, rest);
+  console.log('длина rest:', rest.length);
+}
+summ()
+summ(1, 2, 3, 4, 5,)
+summ(1, 2)
