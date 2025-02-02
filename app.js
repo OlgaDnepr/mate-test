@@ -222,3 +222,76 @@ function summ(a, b, ...rest) {
 summ()
 summ(1, 2, 3, 4, 5,)
 summ(1, 2)
+
+function canTheyBook(adultsCount, childrenCount = 0, babiesCount = 0) {
+
+  if (adultsCount < 1) {
+   return false; 
+  }
+ let count = adultsCount + childrenCount;
+ if (babiesCount > 1) {
+   count += babiesCount - 1;
+ }
+  if (count > 8) {
+   return false;
+ }
+
+if (childrenCount > adultsCount * 2 ) {
+    return false;
+}
+    if (babiesCount > adultsCount) {
+      return false;
+    }
+ if (childrenCount + babiesCount > adultsCount * 2) {
+    return false;
+}
+    return true;
+}
+
+
+console.log(canTheyBook(1, 0, 2));
+
+function recommendRoom(adultsCount, childrenCount = 0, babiesCount = 0) {
+  // write code here
+  let totalCount = adultsCount + childrenCount + babiesCount;
+
+  if (adultsCount < 1) {
+    return false;
+  }
+
+  if (babiesCount > adultsCount) {
+    return false;
+  }
+
+  if (childrenCount + babiesCount > 2 * adultsCount) {
+    return false;
+  }
+
+if (childrenCount > 2 * adultsCount) {
+    return false;
+  }
+if (totalCount <= 4) {
+return 'small room';
+}
+
+if (totalCount === 5 && babiesCount > 0) {
+return 'small room + extra bed';
+}
+
+if (totalCount === 9 && babiesCount > 0) {
+return 'big room + extra bed';
+}
+
+if (totalCount <= 8) {
+return 'big room';
+}
+}
+console.log(recommendRoom(2, 0, 2));
+
+const user = {
+  firstName: 'John',
+  lastName: 'Smith',
+  age: 20,
+};
+
+console.log(user); // { firstName: 'John', lastName: 'Smith', age: 20 }
