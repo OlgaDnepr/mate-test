@@ -291,7 +291,63 @@ console.log(recommendRoom(2, 0, 2));
 const user = {
   firstName: 'John',
   lastName: 'Smith',
-  age: 20,
+  age: 20
 };
 
+if (user['age']) {
+  console.log('property');
+}
+console.log(user['age']);
+
 console.log(user); // { firstName: 'John', lastName: 'Smith', age: 20 }
+
+const users = {
+  firstName: 'John',
+  lastName: 'Smith',
+  age: 20,
+};
+for (const key of Object.keys(users)) {
+  console.log(key, user[key]); 
+}
+
+for (const value of Object.values(users)) {
+  console.log(value); 
+}
+
+for (const entry of Object.entries(users)) {
+  console.log(`${entry[0]} is ${entry[1]}`); 
+}
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false,
+};
+
+console.log(Object.values(object1));
+
+
+const object2 = {
+  a: 'somestring',
+  b: 42,
+};
+
+for (const [key, value] of Object.entries(object2)) {
+  console.log(`${key}: ${value}`);
+}
+
+const robot = {
+  version: 16,
+  name: 'Cleaner 3000',
+  released: true,
+  author: { name: 'Vlad' },
+};
+
+function getRobotSchema(robot) {
+  const rob = {};
+   for (const key of Object.keys(robot)) {
+         rob[key] = typeof robot[key];
+   } 
+    return rob;
+ }
+ const robotSchema = getRobotSchema(robot);
+ console.log(robotSchema);
