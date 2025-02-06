@@ -351,3 +351,14 @@ function getRobotSchema(robot) {
  }
  const robotSchema = getRobotSchema(robot);
  console.log(robotSchema);
+
+ const robot1 = {
+  version: 16,
+  name: 'Cleaner 3000',
+  released: true,
+  author: { name: 'Vlad' },
+   
+};
+const key1 = Object.keys(robot1);
+console.log(key1);
+
